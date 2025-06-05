@@ -1,0 +1,1 @@
+// Logs request/response details to the console for debugging 

@@ -1,0 +1,1 @@
+// Global error hander for try/catch blocks in Next.js API routes

@@ -1,0 +1,1 @@
+// Limits requests to prevent abuse and ensure fair usage
