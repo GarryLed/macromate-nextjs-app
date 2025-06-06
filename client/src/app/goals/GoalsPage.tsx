@@ -59,7 +59,7 @@ export default function Goals() {
   };
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-6 bg-white rounded shadow">
+    <div className="max-w-xl mx-auto px-4 py-6 bg-white rounded shadow-bg">
       <h2 className="text-2xl font-bold mb-4">Nutrition Goals</h2>
 
       <div className="space-y-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import Goals from "./Goals";
+import Goals from "./GoalsPage";
 
 export default function GoalsPage() {
   return (
