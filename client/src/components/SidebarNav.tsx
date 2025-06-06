@@ -5,15 +5,17 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "🏠 Dashboard" },
-  { href: "/search", label: "🔍 Search" },
-  { href: "/meals", label: "🍽️ Daily Log" },
+    {  href: "/", label: "🏠 Home" },
+  { href: "/dashboard", label: "🏠 Dashboard" },
+  { href: "/diary", label: "🍽️ Diary" },
+  { href: "/search", label: "🔍 Food Search" },
   { href: "/foods", label: "🥦 Foods" },
   { href: "/progress", label: "📈 Progress" },
   { href: "/goals", label: "🎯 Goals" },
   { href: "/calendar", label: "🗓️ Calendar" },
   { href: "/about", label: "ℹ️ About" },
   { href: "/profile", label: "👤 Profile" },
+  { href: "/plans", label: "📋 Plans" },
   { href: "/settings", label: "⚙️ Settings" },
 ];
 

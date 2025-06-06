@@ -1,14 +1,29 @@
-// testing tailwindcss setup in Next.js
-import GridShowcase from "@/components/ui/GridShowcase";
+// src/app/page.tsx
 
-export default function DashboardPage() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-1 p-4 bg-gray-100">
-        <h1 className="text-2xl font-bold mb-4" >Dashboard</h1>
-        <GridShowcase />
-      </main>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white px-6 py-12">
+      <h1 className="text-4xl font-bold text-gray-800 mb-4">🥗 Welcome to MacroMate</h1>
+      <p className="text-gray-600 text-center max-w-xl mb-6">
+        Your personal companion for calorie tracking, macro goals, and daily progress. Log meals, track water, and stay on top of your goals — all in one place.
+      </p>
+      <div className="flex gap-4">
+        <Link
+          href="/dashboard"
+          className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition"
+        >
+          Go to Dashboard
+        </Link>
+        <Link
+          href="/about"
+          className="text-indigo-600 hover:underline"
+        >
+          Learn More
+        </Link>
+      </div>
+    </main>
   );
 }
 
