@@ -1,6 +1,6 @@
 // This file mocks API calls for the Dashboard component of MacroMate.
-// Replace these implementations with actual backend service integrations.
 
+import { Goal } from '@/types/goal'; // Import the Goal type for type safety
 // Fetch user goals for calories, water, and macro percentages
 export const getGoals = async () => ({
   calorieGoal: 2200,        // Daily calorie goal in kcal
@@ -9,6 +9,13 @@ export const getGoals = async () => ({
   carbsPercent: 40,         // % of calories from carbs
   fatsPercent: 30,          // % of calories from fats
 });
+
+
+export const saveGoals = async (goal: Goal) => {
+  console.log('Saving goals:', goal); // Simulate API call
+  return true;
+};
+
 
 //  Fetch the current day's meal summary (total nutrients consumed so far)
 export const getMealSummary = async () => ({
