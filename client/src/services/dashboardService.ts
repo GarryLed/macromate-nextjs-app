@@ -1,6 +1,6 @@
 // This file mocks API calls for the Dashboard component of MacroMate.
 
-import { Goal } from '@/types/goal'; // Import the Goal type for type safety
+import { Goal } from '@/types/Goal'; // Import the Goal type for type safety
 // Fetch user goals for calories, water, and macro percentages
 export const getGoals = async () => ({
   calorieGoal: 2200,        // Daily calorie goal in kcal

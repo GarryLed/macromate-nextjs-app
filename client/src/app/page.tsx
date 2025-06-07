@@ -22,12 +22,12 @@ export default function HomePage() {
   }, [router]);
 
  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white px-6 py-12">
-      <motion.h1
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-zinc-900 px-6 py-12 transition-colors duration-300">
+      <motion.h1 // Using Framer Motion for animations
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-gray-800 mb-4"
+        className="text-4xl font-bold text-gray-800 dark:text-white mb-4"
       >
         🥗 Welcome to MacroMate
       </motion.h1>
@@ -36,7 +36,7 @@ export default function HomePage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="text-gray-600 text-center max-w-xl mb-6"
+        className="text-gray-600 dark:text-gray-400 text-center max-w-xl mb-6"
       >
         Your personal companion for calorie tracking, macro goals, and daily progress.
       </motion.p>
@@ -49,13 +49,13 @@ export default function HomePage() {
       >
         <Link
           href="/dashboard"
-          className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition"
+          className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 dark:hover:bg-indigo-500 transition"
         >
           Go to Dashboard
         </Link>
         <Link
           href="/about"
-          className="text-indigo-600 hover:underline"
+          className="text-indigo-600 dark:text-indigo-400 hover:underline"
         >
           Learn More
         </Link>
